@@ -1,5 +1,6 @@
 import React, {useContext, useRef, useState} from 'react';
 import {ContextApp} from "../../contextApp";
+import {motion} from "framer-motion";
 
 const AddTodo = () => {
 	const [inputValue, setInputValue] = useState('')
@@ -24,13 +25,15 @@ const AddTodo = () => {
 		const newTodo =
 				{id: rightId(todos.length + 1), isComplete: false, title: inputValue}
 
-			setSortTodos([...todos, newTodo])
-			setInputValue('')
+		setSortTodos([...todos, newTodo])
+		setInputValue('')
 	};
 
 	return (
-			<form className={'todo-list__add'}
-						onSubmit={submitAddTodo}>
+			<motion.form
+					className={'todo-list__add'}
+					layout
+					onSubmit={submitAddTodo}>
 				<label>
 					<input
 							maxLength={35}
@@ -41,7 +44,7 @@ const AddTodo = () => {
 					/>
 					<button>+</button>
 				</label>
-			</form>);
+			</motion.form>);
 };
 
 export default AddTodo;
