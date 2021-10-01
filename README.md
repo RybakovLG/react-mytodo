@@ -1,10 +1,10 @@
-#My toDo
+# My toDo
 
 **Учебный todo react**
 
 ![My toDo.gif](src/My%20toDo.gif "My toDo.gif")
 
-### [gh-pages](https://rybakovlg.github.io/react-mytodo/ "gh-pages")
+### [gh-pages](https://rybakovlg.github.io/react-mytodo/ "https://rybakovlg.github.io/react-mytodo/")
 
 
 - редактировать todo
